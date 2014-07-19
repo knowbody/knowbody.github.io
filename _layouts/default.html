@@ -8,19 +8,30 @@
     <div class="container content">
       <div class="masthead">
         <h3 class="masthead-title">
-          <a href="{{ site.baseurl }}" title="Home">{{ site.title }}</a>
-          <small>{{ site.tagline }}</small>
+          <a href="/" title="Home">{{ site.title }}</a>
+          <small>Hacker, Software Engineer @ Sandpit Lab.</small>
+
+          <div class="header-list">
+            {% for page in site.pages_list %}
+                &nbsp;&middot;&nbsp;&nbsp;<small><a href="{{ page[1] }}">{{ page[0] }}</a></small>
+            {% endfor %}
+          </div>
+
         </h3>
       </div>
 
-      {{ content }}
+      <div class="separator">---</div>
+        {{ content }}
+      <div class="separator">---</div>
 
       <div class="footer">
         <p>
-          &copy; {{ site.time | date: '%Y' }}. All rights reserved.
+          Mateusz Zatorski &copy; {{ site.time | date: '%Y' }}. All rights reserved.
         </p>
       </div>
     </div>
 
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script src="/js/infinite-jekyll.js"></script>
   </body>
 </html>
