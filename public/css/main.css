@@ -8,12 +8,6 @@
   padding-top: 15px;
 }
 
-.post-divider {
-  padding-bottom: 100px;
-  background:url(/public/assets/images/divider.png) no-repeat center 2px;
-  text-align:center;
-}
-
 /* Infinite spinner - (https://github.com/tobiasahlin/infinite-jekyll) */
 .infinite-spinner {
   display: block;
