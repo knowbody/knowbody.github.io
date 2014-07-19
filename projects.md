@@ -3,4 +3,5 @@ layout: page
 title: Projects
 ---
 
-Still need to add this bit
+Need to spend some more time on this section. For now if you're interested see
+my [GitHub profile](https://github.com/knowbody).
